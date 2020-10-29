@@ -566,7 +566,7 @@ func processType(s *metaSchema, pName, pDesc, path, parentPath string) (typeRef 
 				}
 
 				if len(patternPropTypes) > 0 {
-					sf.TypePrefix = fmt.Sprintf("map[string]%s", patternPropTypes[0])
+					sf.TypePrefix = fmt.Sprintf("map[string]%s", getTypeString(patternPropTypes[0], ""))
 				}
 
 			} else if !hasProps && hasAddlProps && addlPropsSchema != nil {
