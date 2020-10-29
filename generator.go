@@ -17,10 +17,9 @@ import (
 	"gopkg.in/alecthomas/kingpin.v2"
 
 	"github.com/gedex/inflector"
-	"github.com/idubinskiy/schematyper/stringset"
-)
 
-//go:generate schematyper --root-type=metaSchema --prefix=meta metaschema.json
+	"github.com/fewlinesco/schematyper/stringset"
+)
 
 var (
 	outToStdout     = kingpin.Flag("console", "output to console instead of file").Default("false").Short('c').Bool()

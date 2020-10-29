@@ -7,8 +7,6 @@ github.com/alecthomas/units
 github.com/gedex/inflector
 # github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1
 github.com/gopherjs/gopherjs/js
-# github.com/idubinskiy/schematyper v0.0.0-20190118213059-f71b40dac30d
-github.com/idubinskiy/schematyper/stringset
 # github.com/jtolds/gls v4.20.0+incompatible
 github.com/jtolds/gls
 # github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d
