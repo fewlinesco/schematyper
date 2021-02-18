@@ -605,6 +605,9 @@ func processType(s *metaSchema, pName, pDesc, path, parentPath string) (typeRef 
 					return ""
 				}
 				sf.TypePrefix = "[]"
+				if !sf.Required && *ptrForOmit {
+					sf.Nullable = true
+				}
 				sf.TypeRef = gotType
 			default:
 				sf.TypePrefix = typeEmptyInterfaceSlice
